@@ -1,5 +1,5 @@
 #subs-logo {
-    max-width: 600px;
+    max-width: 80%;
 }
 
 button {
@@ -10,4 +10,10 @@ button {
 
 p {
     font-size: 14px;
+}
+
+@media screen and (max-width: 667px) {
+   .container {
+       text-align: center;
+   }
 }

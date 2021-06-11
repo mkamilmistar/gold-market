@@ -1,7 +1,6 @@
 .social {
   img {
-    width: 30px;
-    height: 30px;
+    width: 250%;
   }
 }
 
@@ -22,5 +21,21 @@
   h5, p {
       margin: 0;
       padding: 0;
+  }
+}
+
+
+
+@media screen and (max-width: 667px) {
+  footer {
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .social {
+    padding-top: 15px !important;
   }
 }

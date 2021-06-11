@@ -1,5 +1,9 @@
-button {
+.btn-primary {
     background-color: rgb(255,193,6);
     color: white;
     border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(218, 163, 0);
 }
