@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jumbotron.component.scss']
 })
 export class JumbotronComponent implements OnInit {
+  label = "Register"
+
+  functionCall() {
+    console.log("Clicked");
+    
+  }
 
   constructor() { }
 
