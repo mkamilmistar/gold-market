@@ -10,7 +10,7 @@
 ## ScreenShot
 
 <p align="center">
-    <img src ="documentation/home/1.png" width="500px">
-    <img src ="documentation/home/2.png" width="500px">
-    <img src ="documentation/home/3.png" width="500px">
+    <img src ="documentation/home/1.png" width="600px">
+    <img src ="documentation/home/2.png" width="600px">
+    <img src ="documentation/home/3.png" width="600px">
 </p>
