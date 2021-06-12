@@ -8,6 +8,9 @@ import { SilverComponent } from './pages/silver/silver.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
 import { WrongRouteComponent } from './pages/wrong-route/wrong-route.component';
+import { EventComponent } from './pages/event/event.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -33,6 +36,18 @@ const routes: Routes = [
   {
     path: "silver",    
     component: SilverComponent
+  },
+  {
+    path: "event",    
+    component: EventComponent
+  },
+  {
+    path: "about",    
+    component: AboutComponent
+  },
+  {
+    path: "contact",    
+    component: ContactComponent
   },
   // { 
   //   path: "**", 

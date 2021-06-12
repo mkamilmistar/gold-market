@@ -2,16 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { NavbarService } from 'src/app/shared/services/navbar/navbar.service';
 
 @Component({
-  selector: 'app-wrong-route',
-  templateUrl: './wrong-route.component.html',
-  styleUrls: ['./wrong-route.component.scss']
+  selector: 'app-event',
+  templateUrl: './event.component.html',
+  styleUrls: ['./event.component.scss']
 })
-export class WrongRouteComponent implements OnInit {
+export class EventComponent implements OnInit {
 
   constructor(public nav: NavbarService) { }
 
   ngOnInit(): void {
-    this.nav.hide();
+    this.nav.show();
   }
 
 }

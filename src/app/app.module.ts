@@ -12,6 +12,9 @@ import { PlatinumModule } from './pages/platinum/platinum.module';
 import { RegisterComponent } from './pages/auth/register/register.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { WrongRouteComponent } from './pages/wrong-route/wrong-route.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { EventComponent } from './pages/event/event.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { WrongRouteComponent } from './pages/wrong-route/wrong-route.component';
     RegisterComponent,
     LoginComponent,
     WrongRouteComponent,
+    EventComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
