@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-jumbotron',
@@ -8,14 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class JumbotronComponent implements OnInit {
   label = "Register"
 
-  functionCall() {
-    console.log("Clicked");
-    
-  }
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  functionCall() {
+    this.router.navigateByUrl('/register');
   }
 
 }

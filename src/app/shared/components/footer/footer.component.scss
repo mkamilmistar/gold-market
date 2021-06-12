@@ -1,6 +1,6 @@
 .social {
   img {
-    width: 250%;
+    max-width: 250%;
   }
 }
 
@@ -37,5 +37,9 @@
 
   .social {
     padding-top: 15px !important;
+
+    img {
+      max-width: 10%;
+    }
   }
 }

@@ -5,8 +5,19 @@ import { HomeComponent } from './pages/home/home.component';
 import { PlatinumComponent } from './pages/platinum/platinum.component';
 import { GoldComponent } from './pages/gold/gold.component';
 import { SilverComponent } from './pages/silver/silver.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { RegisterComponent } from './pages/auth/register/register.component';
+import { WrongRouteComponent } from './pages/wrong-route/wrong-route.component';
 
 const routes: Routes = [
+  {
+    path: "login",    
+    component: LoginComponent
+  },
+  {
+    path: "register",    
+    component: RegisterComponent
+  },
   {
     path: "home",    
     component: HomeComponent
@@ -23,6 +34,16 @@ const routes: Routes = [
     path: "silver",    
     component: SilverComponent
   },
+  // { 
+  //   path: "**", 
+  //   pathMatch: '', 
+  //   component: WrongRouteComponent
+  // },
+  {
+    path: "",
+    pathMatch: "full",
+    redirectTo: "home"
+  }
 ];
 
 @NgModule({
