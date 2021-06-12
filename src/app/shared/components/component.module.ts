@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { ButtonComponent } from './button/button.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ButtonComponent } from './button/button.component';
   ],
   imports: [
     CommonModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent,
