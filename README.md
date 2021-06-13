@@ -7,6 +7,20 @@
 - The last step is run 
 `ng serve --open`
 
+## Tech in Use
+* Angular Routing
+* HTML
+* CSS
+* Typescript
+
+## URL
+* Home
+`/home`
+* Register
+`/register`
+* Login
+`/login`
+
 ## ScreenShot
 
 <p align="center">
