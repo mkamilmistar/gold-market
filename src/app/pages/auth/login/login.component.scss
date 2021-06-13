@@ -1,0 +1,29 @@
+.login-image {
+    height: 735px;
+   background-color: bisque;
+}
+
+.login-form {
+    margin: auto;
+    height: 100%;
+}
+
+.container-fluid {
+    margin: auto;
+    width: auto;
+
+    .w-50 {
+        width: 30% !important;
+    }
+}
+
+.form-group {
+    padding: 10px 0px;
+    label {
+        font-weight: 600;
+    }
+}
+
+a {
+    text-decoration: none; 
+ }
