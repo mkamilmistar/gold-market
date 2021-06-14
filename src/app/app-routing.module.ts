@@ -11,6 +11,7 @@ import { WrongRouteComponent } from './pages/wrong-route/wrong-route.component';
 import { EventComponent } from './pages/event/event.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { HomeModule } from './pages/home/home.module';
 
 const routes: Routes = [
   {
@@ -62,13 +63,14 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [RegisterComponent, LoginComponent],
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),
   ],
   exports: [
-    RouterModule
+    RouterModule,
+    HomeModule
   ]
 })
 export class AppRoutingModule { }

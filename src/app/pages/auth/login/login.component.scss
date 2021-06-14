@@ -27,3 +27,24 @@
 a {
     text-decoration: none; 
  }
+
+ @media screen and (max-width: 667px) {
+    .container-fluid {
+        height: 100%;
+        margin: auto 0;
+        .w-50 {
+
+            width: 90% !important;
+        }
+    }
+
+    .login-image {
+        height: 0%;
+        background-color: bisque;
+    }
+
+    .login-form {
+        margin-top: 45%;
+    }
+
+ }
