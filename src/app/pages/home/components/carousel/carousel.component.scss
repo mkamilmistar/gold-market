@@ -1,9 +1,13 @@
 .carousel-item {
-    height: 600px !important;
+    height: 700px !important;
 }
 
 @media screen and (max-width: 667px) {
     .carousel-item {
         height: 200px !important;
     }
+}
+
+.carousel {
+    margin-top: -60px;
 }

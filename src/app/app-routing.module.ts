@@ -12,6 +12,7 @@ import { EventComponent } from './pages/event/event.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeModule } from './pages/home/home.module';
+import { SharedModule } from './shared/shared.module';
 
 const routes: Routes = [
   {
@@ -67,10 +68,12 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),
+    SharedModule
   ],
   exports: [
     RouterModule,
-    HomeModule
+    HomeModule,
+    SharedModule
   ]
 })
 export class AppRoutingModule { }

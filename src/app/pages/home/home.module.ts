@@ -5,6 +5,7 @@ import { ComponentModule } from 'src/app/shared/components/component.module';
 import { ProductComponent } from './components/product/product.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { BenefitsComponent } from './components/benefits/benefits.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 const COMPONENTS = [ 
   HomeComponent,
@@ -21,6 +22,7 @@ const COMPONENTS = [
   imports: [
     CommonModule,
     ComponentModule,
+    SharedModule
   ],
   exports: [
     HomeComponent,

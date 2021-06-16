@@ -5,21 +5,22 @@ import { FooterComponent } from './footer/footer.component';
 import { ButtonComponent } from './button/button.component';
 import { RouterModule } from '@angular/router';
 
+const COMPONENTS = [
+  NavbarComponent,
+  FooterComponent,
+  ButtonComponent,
+]
 
 @NgModule({
   declarations: [
-    NavbarComponent,
-    FooterComponent,
-    ButtonComponent,
+    ...COMPONENTS,
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
-    NavbarComponent,
-    FooterComponent,
-    ButtonComponent
+   ...COMPONENTS,
   ]
 })
 export class ComponentModule { }

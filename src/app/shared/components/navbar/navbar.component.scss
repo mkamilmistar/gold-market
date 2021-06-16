@@ -22,3 +22,15 @@
     border-color: rgb(255, 224, 87);
     background-color: rgb(255, 224, 87);
 }
+
+.text-gold {
+   a {
+    color: white;
+   }
+}
+
+.text-gold:hover {
+   a {
+    color: rgb(255, 208, 0);
+   }
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { CarouselPost } from './carousel';
 
 @Component({
@@ -15,9 +15,9 @@ export class CarouselComponent implements OnInit {
       desc: 'Invest your assets and wealth in gold.'
     },
     {
-      title: 'Platinum Investment',
+      title: 'Saving with Jewelry',
       imgUrl: '../../../assets/images/carousel-2.png',
-      desc: 'Invest your assets and wealth in gold.'
+      desc: "Lets's save and decorate with gold jewelry."
     },
     {
       title: 'Silver Investment',

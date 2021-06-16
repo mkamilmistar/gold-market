@@ -6,7 +6,7 @@
     </div>
     <div class="carousel-inner">
       <div 
-        class="carousel-item active" 
+        class="carousel-item" 
         [ngClass]="getSliderClass(isFirst, isLast)"
         *ngFor="
           let item of this.carousels;
@@ -17,8 +17,8 @@
       >
         <img src={{item.imgUrl}} class="d-block w-100" alt="carousel-1" id="carousel">
         <div class="carousel-caption d-none d-md-block">
-          <h5>{{item.title}} </h5>
-          <p>{{item.desc}} </p>
+          <h5>{{item.title}}</h5>
+          <p>{{item.desc}}</p>
         </div>
       </div>
     </div>
