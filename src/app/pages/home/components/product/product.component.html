@@ -1,27 +1,11 @@
 <div class="container-fluid pb-4 justify-content-center" id="main-container">
   <h2 class="py-4 text-center">Our Product</h2>
   <div class="row px-5 justify-content-center">
-    <div class="col-md product">
+    <div class="col-md product" *ngFor="let product of products">
       <div class="card">
-        <img src="../../../../../assets/images/1.png" class="mx-auto" alt="platinum" />
+        <img src="{{ product.imgUrl }}" class="mx-auto" alt="platinum" />
         <div class="card-body">
-          <h5 class="card-title">Platinum Investment</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-md product">
-      <div class="card">
-        <img src="../../../../../assets/images/2.png" class="mx-auto" alt="gold" />
-        <div class="card-body">
-          <h5 class="card-title">Gold Investment</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-md product">
-      <div class="card">
-        <img src="../../../../../assets/images/3.png" class="mx-auto" alt="silver" />
-        <div class="card-body">
-          <h5 class="card-title">Silver Investment</h5>
+          <h5 class="card-title">{{ product.title }}</h5>
         </div>
       </div>
     </div>
