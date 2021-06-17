@@ -19,12 +19,15 @@
         </li>
       </ul>
       <form class="d-flex">
+        <div class="row m-auto">
+          <div class="col">
+           <p class="m-auto badge"> {{ displayFormat | navtime }}</p>
+          </div>
+         </div>
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-warning" type="submit">Search</button>
       </form>
-      <div class="mt-2 mx-2 date text-gold">
-        <h5> {{ displayFormat | navtime }}</h5>
-      </div>
+     
     </div>
   </div>
 </nav>
