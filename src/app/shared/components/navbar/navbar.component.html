@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top" (scroll)="onWindowScroll()" *ngIf="nav.visible">
+<nav appBsNavbar (scroll)="onWindowScroll()" *ngIf="nav.visible">
   <div class="container">
     <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
       <img src="../../../assets/images/mandiri-logo.png" alt="mandiri-logo" id="logo-navbar">

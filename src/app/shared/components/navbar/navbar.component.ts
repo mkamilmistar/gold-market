@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     let elementNav = document.querySelector('.navbar') as HTMLElement;
