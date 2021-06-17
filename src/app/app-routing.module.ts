@@ -68,12 +68,10 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),
-    SharedModule
   ],
   exports: [
     RouterModule,
     HomeModule,
-    SharedModule
   ]
 })
 export class AppRoutingModule { }

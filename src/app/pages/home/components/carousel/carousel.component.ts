@@ -26,13 +26,6 @@ export class CarouselComponent implements OnInit {
     }
   ]
 
-  getSliderClass(isFirst: any, isLast: any) {
-    return {
-      active: isFirst,
-      lastactive: isLast,
-    }
-  }
-
   ngOnInit(): void {
   }
 

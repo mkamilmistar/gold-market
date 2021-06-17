@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ButtonComponent } from './button/button.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared.module';
 
 const COMPONENTS = [
   NavbarComponent,
@@ -18,6 +19,7 @@ const COMPONENTS = [
   imports: [
     CommonModule,
     RouterModule,
+    SharedModule
   ],
   exports: [
    ...COMPONENTS,
