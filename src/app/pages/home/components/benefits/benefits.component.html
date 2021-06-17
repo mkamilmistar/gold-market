@@ -13,7 +13,7 @@
         </div>
         <div class="row pb-4">
           <div class="col-sm" *ngFor="let service of this.serviceBenefits">
-            <h4>{{service.title}}</h4>
+            <h4>{{service.title | titlecase}}</h4>
             <p>
              {{ service.desc }}
             </p>
@@ -21,7 +21,7 @@
         </div>
         <div class="row">
           <div class="col-sm"  *ngFor="let product of this.productBenefits">
-            <h4>{{product.title}}</h4>
+            <h4>{{product.title | titlecase}}</h4>
             <p>
               {{product.desc}}
             </p>

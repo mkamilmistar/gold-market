@@ -11,29 +11,29 @@ export class BenefitsComponent implements OnInit {
   buttonLabel = "Register"
   serviceBenefits: ServiceBenefits[] = [
     {
-      title: "Delivery",
+      title: "delivery",
       desc: "We have free delivery service to all city in Indonesia."
     },
     {
-      title: "Legality",
+      title: "legality",
       desc: "We commit to keep your trusted with legality transaction."
     },
     {
-      title: "Price",
+      title: "price",
       desc: "Good quality with the best prices."
     }
   ]
   productBenefits: ProductBenefits[] = [
     {
-      title: "Reward",
+      title: "reward",
       desc: "More transaction more point and reward."
     },
     {
-      title: "Transaction",
+      title: "transaction",
       desc: "Our transaction is simple and secure."
     },
     {
-      title: "Brand",
+      title: "brand",
       desc: "Our product is the best on quality and brand."
     }
   ]

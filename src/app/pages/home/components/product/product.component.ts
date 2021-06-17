@@ -10,15 +10,15 @@ export class ProductComponent implements OnInit {
 
   products: Product[] = [
     {
-      title: 'Platinum Investment',
+      title: 'platinum investment',
       imgUrl: '../../../../../assets/images/1.png'
     },
     {
-      title: 'Gold Investment',
+      title: 'gold investment',
       imgUrl: '../../../../../assets/images/2.png'
     },
     {
-      title: 'Silver Investment',
+      title: 'silver investment',
       imgUrl: '../../../../../assets/images/3.png'
     }
   ]
