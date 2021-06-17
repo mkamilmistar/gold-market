@@ -5,6 +5,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ButtonComponent } from './button/button.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared.module';
+import { PipesModule } from '../pipes/pipes.module';
+import { NavTimePipe } from '../pipes/nav-time.pipe';
+import { DirectivesModule } from '../directives/directives.module';
 
 const COMPONENTS = [
   NavbarComponent,
@@ -19,7 +22,9 @@ const COMPONENTS = [
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    PipesModule,
+    DirectivesModule
   ],
   exports: [
    ...COMPONENTS,
