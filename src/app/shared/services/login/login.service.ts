@@ -11,6 +11,6 @@ export class LoginService {
   login(data: any) {
     this.DataLogin = data
 
-    localStorage.setItem("data-login", JSON.stringify(this.DataLogin))
+    sessionStorage.setItem("data-login", JSON.stringify(this.DataLogin))
   }
 }
