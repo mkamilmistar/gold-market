@@ -27,13 +27,10 @@ export class LoginComponent implements OnInit {
     this.nav.hide();
   }
 
-  login(){
+  login() {
     if(this.LoginUser.valid) {
-      console.log("TES");
-
       this.loginService.login(this.LoginUser.value)
     }
-    
   }
 
 }

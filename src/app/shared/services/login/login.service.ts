@@ -8,9 +8,8 @@ export class LoginService {
   DataLogin: any;
 
   // Login
-  login(data: any) {
+  login(data: any){
     this.DataLogin = data
-
     sessionStorage.setItem("data-login", JSON.stringify(this.DataLogin))
   }
 }
