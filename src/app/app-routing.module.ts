@@ -7,12 +7,12 @@ import { GoldComponent } from './pages/gold/gold.component';
 import { SilverComponent } from './pages/silver/silver.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
-import { WrongRouteComponent } from './pages/wrong-route/wrong-route.component';
 import { EventComponent } from './pages/event/event.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeModule } from './pages/home/home.module';
 import { SharedModule } from './shared/shared.module';
+import { LoginModule } from './pages/auth/login/login.module';
 
 const routes: Routes = [
   {
@@ -64,14 +64,16 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [RegisterComponent, LoginComponent],
+  declarations: [],
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),
+    SharedModule,
   ],
   exports: [
     RouterModule,
     HomeModule,
+    LoginModule
   ]
 })
 export class AppRoutingModule { }
