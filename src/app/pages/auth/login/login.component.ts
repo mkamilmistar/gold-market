@@ -13,8 +13,8 @@ export class LoginComponent implements OnInit {
   public LoginUser: FormGroup;
 
   constructor( 
-    public formBuilder: FormBuilder,
-    public loginService: LoginService,
+    private readonly formBuilder: FormBuilder,
+    private readonly loginService: LoginService,
     private readonly nav: NavbarService, 
     ) { 
       this.LoginUser = this.formBuilder.group({
