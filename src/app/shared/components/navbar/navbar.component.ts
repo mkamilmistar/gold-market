@@ -24,7 +24,6 @@ export class NavbarComponent implements OnInit {
     if (window.pageYOffset <= 80) {
       elementNav.classList.add('bg-transparent');
       elementDate.classList.add('text-white')
-      elementDate.classList.remove('text-secondary')
 
       for (let i = 0; i < elementTitle.length; i++) {
         elementTitle[i].classList.add('text-gold')
