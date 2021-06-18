@@ -64,7 +64,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [RegisterComponent, LoginComponent],
+  declarations: [],
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),

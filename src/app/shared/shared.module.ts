@@ -1,16 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavTimePipe } from './pipes/nav-time.pipe';
+import { ButtonComponent } from './components/button/button.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { BsFontDirective } from './directives/bs-font/bs-font.directive';
+import { BsNavbarDirective } from './directives/bs-navbar/bs-navbar.directive';
+import { CapitalizePipe } from './pipes/capitilize/capitalize.pipe';
+import { NavTimePipe } from './pipes/nav-time/nav-time.pipe';
 
 const COMPONENTS: any = [
-
-]
-
-const DIRECTIVES: any = [
+  ButtonComponent,
+  FooterComponent,
+  NavbarComponent
   
 ]
 
+const DIRECTIVES: any = [
+  BsFontDirective,
+  BsNavbarDirective
+]
+
 const PIPES = [
+  CapitalizePipe,
   NavTimePipe
 ]
 
@@ -18,13 +29,15 @@ const PIPES = [
   declarations: [
     ...COMPONENTS,
     ...DIRECTIVES,
-    // ...PIPES
+    ...PIPES
   ],
   imports: [
     CommonModule,
   ],
   exports: [
-    // ...PIPES
+    ...PIPES,
+    ...COMPONENTS,
+    ...DIRECTIVES,
   ]
 })
 export class SharedModule { }
