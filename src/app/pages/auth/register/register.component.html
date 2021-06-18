@@ -1,32 +1,36 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4 register-image">
-            <!-- <img src="../../../../assets/images/carousel-1.png" alt=""> -->
+    <div class="row no-gutter">
+      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading mb-4">Welcome back!</h3>
+                <form>
+                  <div class="form-label-group">
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <label for="inputEmail">Email address</label>
+                  </div>
+  
+                  <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <label for="inputPassword">Password</label>
+                  </div>
+  
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Remember password</label>
+                  </div>
+                  <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                  <div class="text-center">
+                    <a class="small" href="#">Forgot password?</a></div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-8 register-form w-50">
-            <form>
-                <div class="form-group">
-                    <h4>Register to Gold Market</h4>
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" >
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Re-Enter Password</label>
-                    <input type="password" class="form-control" >
-                </div>
-                <button type="submit" class="btn btn-warning">Register</button>
-               <div class="mt-4">
-                Already a member? <a routerLink="/login">Login</a>
-               </div>
-            </form>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
+  

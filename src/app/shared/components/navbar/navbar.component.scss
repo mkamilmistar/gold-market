@@ -38,3 +38,20 @@
 .badge,h5 {
     font-size: 16px;
 }
+
+@media screen and (max-width: 667px) {
+   .nav-item {
+        a {
+        color: black;
+       }
+   }
+   .col {
+       p {
+           color: black;
+       }
+       overflow-wrap:normal;
+   }
+   .text-white, .text-secondary {
+       color: black !important;
+   }
+}
