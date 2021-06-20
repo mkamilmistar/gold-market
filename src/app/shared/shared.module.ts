@@ -10,6 +10,7 @@ import { NavTimePipe } from './pipes/nav-time/nav-time.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoginService } from './services/login/login.service';
+import { RegisterService } from './services/register/register.service';
 
 const COMPONENTS: any = [
   ButtonComponent,
@@ -46,7 +47,8 @@ const PIPES = [
     ...DIRECTIVES,
   ],
   providers: [
-    LoginService
+    LoginService,
+    RegisterService
   ]
 })
 export class SharedModule { }

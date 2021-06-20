@@ -8,7 +8,7 @@ import { ProductBenefits, ServiceBenefits } from './benefits';
   styleUrls: ['./benefits.component.scss']
 })
 export class BenefitsComponent implements OnInit {
-  buttonLabel = "Login"
+  buttonLabel = "Register"
   serviceBenefits: ServiceBenefits[] = [
     {
       title: "delivery",
@@ -44,7 +44,7 @@ export class BenefitsComponent implements OnInit {
   }
 
   functionCall() {
-    this.router.navigateByUrl('/login');
+    this.router.navigateByUrl('/register');
   }
 
 }

@@ -13,6 +13,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomeModule } from './pages/home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { LoginModule } from './pages/auth/login/login.module';
+import { RegisterModule } from './pages/auth/register/register.module';
 
 const routes: Routes = [
   {
@@ -73,7 +74,8 @@ const routes: Routes = [
   exports: [
     RouterModule,
     HomeModule,
-    LoginModule
+    LoginModule,
+    RegisterModule
   ]
 })
 export class AppRoutingModule { }
