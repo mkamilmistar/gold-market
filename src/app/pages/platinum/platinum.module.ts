@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PlatinumComponent } from './platinum.component';
 import { SilverRoutingModule } from '../silver/silver-routing.module';
+import { PlatinumRoutingModule } from './platinum-routing.module';
 
 
 
@@ -9,7 +10,7 @@ import { SilverRoutingModule } from '../silver/silver-routing.module';
   declarations: [PlatinumComponent],
   imports: [
     CommonModule,
-    SilverRoutingModule
+    PlatinumRoutingModule
   ],
   exports: [
     PlatinumComponent

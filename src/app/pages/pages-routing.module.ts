@@ -9,6 +9,11 @@ const routes: Routes = [
         redirectTo: 'home'
     },
     {
+        path: '404',
+        loadChildren: () => import('./wrong-route/wrong-route.module')
+        .then((m) => m.WrongRouteModule)
+    },
+    {
         path: 'home',
         loadChildren: () => import('./home/home.module')
             .then((m) => m.HomeModule)
