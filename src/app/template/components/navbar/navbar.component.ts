@@ -1,5 +1,6 @@
 import { Component, HostBinding, HostListener, Input, OnInit } from '@angular/core';
-import { NavbarService } from '../../services/navbar/navbar.service';
+import { NavbarService } from 'src/app/shared/services/navbar/navbar.service';
+
 
 @Component({
   selector: 'app-navbar',

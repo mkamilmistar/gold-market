@@ -1,18 +1,18 @@
-import { Injectable } from "@angular/core";
-import { CanLoad } from "@angular/router";
+// import { Injectable } from "@angular/core";
+// import { CanLoad } from "@angular/router";
 
-@Injectable({
-  providedIn: "root",
-})
+// @Injectable({
+//   providedIn: "root",
+// })
 
-export class AuthGuard implements CanLoad {
-  authstatus: any;
+// export class AuthGuard implements CanLoad {
+//   authstatus: any;
 
-  constructor() {}
+//   constructor() {}
 
-  canLoad(): boolean {
-    this.authstatus=true
+//   canLoad(): boolean {
+//     this.authstatus=true
 
-    return this.authstatus;
-  }
-}
+//     return this.authstatus;
+//   }
+// }

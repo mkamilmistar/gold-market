@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PlatinumComponent } from './platinum.component';
+import { SilverRoutingModule } from '../silver/silver-routing.module';
 
 
 
 @NgModule({
   declarations: [PlatinumComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SilverRoutingModule
   ],
   exports: [
     PlatinumComponent

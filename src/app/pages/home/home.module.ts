@@ -5,13 +5,13 @@ import { ProductComponent } from './components/product/product.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { BenefitsComponent } from './components/benefits/benefits.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { HomeRoutingModule } from './home-routing.module';
 
 const COMPONENTS = [ 
   HomeComponent,
   ProductComponent,
   CarouselComponent,
   BenefitsComponent,
-  CarouselComponent
 ]
 
 @NgModule({
@@ -20,10 +20,11 @@ const COMPONENTS = [
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    HomeRoutingModule,
   ],
   exports: [
-    HomeComponent,
+    HomeComponent
   ]
 })
 export class HomeModule { }

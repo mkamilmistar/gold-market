@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './components/button/button.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { BsFontDirective } from './directives/bs-font/bs-font.directive';
 import { BsNavbarDirective } from './directives/bs-navbar/bs-navbar.directive';
 import { CapitalizePipe } from './pipes/capitilize/capitalize.pipe';
@@ -14,9 +12,6 @@ import { RegisterService } from './services/register/register.service';
 
 const COMPONENTS: any = [
   ButtonComponent,
-  FooterComponent,
-  NavbarComponent
-  
 ]
 
 const DIRECTIVES: any = [
@@ -37,9 +32,6 @@ const PIPES = [
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    BrowserModule
   ],
   exports: [
     ...PIPES,
