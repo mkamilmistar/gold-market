@@ -7,6 +7,11 @@
 - The last step is run 
 `ng serve --open`
 
+## Feature
+* Routing
+* Auto redirect when routes wrong
+* Button Component (Reusable)
+
 ## Tech in Use
 * Angular Routing
 * HTML
