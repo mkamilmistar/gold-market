@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/shared/services/login/login.service';
 import { NavbarService } from 'src/app/shared/services/navbar/navbar.service';
 
@@ -16,6 +17,7 @@ export class LoginComponent implements OnInit {
     private readonly formBuilder: FormBuilder,
     private readonly loginService: LoginService,
     private readonly nav: NavbarService, 
+    private readonly router: Router
     ) { 
       this.LoginUser = this.formBuilder.group({
         email: ["", Validators.required],
@@ -30,6 +32,7 @@ export class LoginComponent implements OnInit {
   login() {
     if(this.LoginUser.valid) {
       this.loginService.login(this.LoginUser.value)
+      this.router.navigate(['users'])
     }
   }
 
