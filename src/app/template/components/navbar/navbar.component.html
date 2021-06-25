@@ -8,18 +8,18 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item text-gold">
-          <a class="nav-link" routerLink="/platinum">Platinum</a>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" (click)="navigateProduct('platinum', 1)">Platinum</a>
         </li>
-        <li class="nav-item text-gold">
-          <a class="nav-link" routerLink="/gold">Gold</a>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" (click)="navigateProduct('gold', 1)">Gold</a>
         </li>
-        <li class="nav-item text-gold">
-          <a class="nav-link" routerLink="/silver">Silver</a>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" (click)="navigateProduct('silver', 1)">Silver</a>
         </li>
         <div class="row m-auto">
           <div class="col">
-           <p class="m-auto badge"> {{ displayFormat | navtime }}</p>
+           <p class="m-auto text-secondary"> {{ displayFormat | navtime }}</p>
           </div>
          </div>
       </ul>
@@ -27,7 +27,18 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-warning" type="submit">Search</button>
       </form>
-     
+      <ul class="navbar-nav mx-2">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-user"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="" routerLink="/profile">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="" routerLink="/login">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

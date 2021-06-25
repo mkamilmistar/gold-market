@@ -7,6 +7,12 @@
     color: rgb(175, 143, 0);
 }
 
+.nav-item {
+    a {
+    color: rgb(94, 94, 94);
+   }
+}
+
 #logo-navbar {
     max-width: 100px;
 }
@@ -35,23 +41,44 @@
    }
 }
 
-.badge,h5 {
+.badge, h5 {
     font-size: 16px;
 }
 
-@media screen and (max-width: 667px) {
-   .nav-item {
-        a {
-        color: black;
-       }
-   }
-   .col {
-       p {
-           color: black;
-       }
-       overflow-wrap:normal;
-   }
-   .text-white, .text-secondary {
-       color: black !important;
-   }
+.navbar-toggler-icon {
+    color: white !important;
 }
+
+.nav-link {
+    i {
+        font-size: 30px;
+    }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    background-color: rgb(253, 214, 40);
+}
+
+.dropdown-item.active, .dropdown-item:hover {
+    color: #fff;
+    background-color: rgb(255, 208, 0);
+}
+
+
+// @media screen and (max-width: 667px) {
+//    .nav-item {
+//         a {
+//         color: black;
+//        }
+//    }
+//    .col {
+//        p {
+//            color: black;
+//        }
+//        overflow-wrap:normal;
+//    }
+//    .text-white, .text-secondary {
+//        color: black !important;
+//    }
+// }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { RouteGuard } from '../shared/guards/route.guard';
 import { PagesComponent } from './pages.component';
 
 
@@ -7,6 +8,8 @@ const routes: Routes = [
     {
         path: '',
         component: PagesComponent,
+        canActivate: [RouteGuard],
+        canActivateChild: [RouteGuard],
         children: [
             {
                 path: '',
@@ -14,39 +17,19 @@ const routes: Routes = [
                 redirectTo: 'home'
             },
             {
-                path: '404',
-                loadChildren: () => import('./wrong-route/wrong-route.module')
-                .then((m) => m.WrongRouteModule)
-            },
-            {
                 path: 'home',
                 loadChildren: () => import('./home/home.module')
                     .then((m) => m.HomeModule)
             },
             {
-                path: 'register',
-                loadChildren: () => import('./auth/register/register.module')
-                    .then((m) => m.RegisterModule)
+                path: 'profile',
+                loadChildren: () => import('./profile/profile.module')
+                    .then((m) => m.ProfileModule)
             },
             {
-                path: 'login',
-                loadChildren: () => import('./auth/login/login.module')
-                    .then((m) => m.LoginModule)
-            },
-            {
-                path: 'gold',
-                loadChildren: () => import('./gold/gold.module')
-                .then((m) => m.GoldModule)
-            },
-            {
-                path: 'platinum',
-                loadChildren: () => import('./platinum/platinum.module')
-                .then((m) => m.PlatinumModule)
-            },
-            {
-                path: 'silver',
-                loadChildren: () => import('./silver/silver.module')
-                .then((m) => m.SilverModule)
+                path: 'products',
+                loadChildren: () => import('./product/product.module')
+                    .then((m) => m.ProductModule)
             },
             {
                 path: 'event',

@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { LoginService } from './services/login/login.service';
 import { RegisterService } from './services/register/register.service';
+import { RouteGuard } from './guards/route.guard';
 
 const COMPONENTS: any = [
   ButtonComponent,
@@ -24,6 +25,12 @@ const PIPES = [
   NavTimePipe
 ]
 
+const PROVIDERS = [
+  LoginService,
+  RegisterService,
+  RouteGuard
+]
+
 @NgModule({
   declarations: [
     ...COMPONENTS,
@@ -32,15 +39,14 @@ const PIPES = [
   ],
   imports: [
     CommonModule,
-  ],
+  ], 
   exports: [
     ...PIPES,
     ...COMPONENTS,
     ...DIRECTIVES,
   ],
   providers: [
-    LoginService,
-    RegisterService
+    ...PROVIDERS
   ]
 })
 export class SharedModule { }

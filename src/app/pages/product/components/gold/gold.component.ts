@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarService } from 'src/app/shared/services/navbar/navbar.service';
 
 @Component({
   selector: 'app-gold',
@@ -8,10 +7,10 @@ import { NavbarService } from 'src/app/shared/services/navbar/navbar.service';
 })
 export class GoldComponent implements OnInit {
 
-  constructor(public nav: NavbarService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.nav.show();
+  
   }
 
 }
