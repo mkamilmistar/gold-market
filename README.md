@@ -8,6 +8,8 @@
 `ng serve --open`
 
 ## Tech in Use
+* SweetAlert
+* CanvasJS
 * Angular Routing
 * HTML
 * CSS
