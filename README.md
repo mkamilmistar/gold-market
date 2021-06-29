@@ -29,4 +29,10 @@
     <img src ="documentation/home/1.png" width="600px">
     <img src ="documentation/home/2.png" width="600px">
     <img src ="documentation/home/3.png" width="600px">
+    <img src ="documentation/product/4.png" width="600px">
+    <img src ="documentation/product/5.png" width="600px">
+    <img src ="documentation/product/8.png" width="600px">
+    <img src ="documentation/transaction/6.png" width="600px">
+    <img src ="documentation/transaction/7.png" width="600px">
+    <img src ="documentation/profile/9.png" width="600px">
 </p>
