@@ -1,6 +1,10 @@
 # Gold Market
 ## How To Start
-- Clone the project with syntax 
+- First you should clone and run the backend with syntax
+`git clone https://github.com/mkamilmistar/goldpocket-springboot.git`
+- And then run the project or you can just run the jar file with syntax
+`java -jar target/xxx.jar`
+- Clone the project Angular with syntax 
 `git clone https://github.com/mkamilmistar/gold-market.git`
 - Run 
 `npm install`
